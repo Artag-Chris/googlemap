@@ -8,7 +8,7 @@ import { Restaurant } from '@material-ui/icons';
 
 const List = () =>{
     const classes = useStyles();
-    const [type, setType] = useState("Restaurants");
+    const [type, setType] = useState("restaurants");
     const [rating, setRating] = useState("");	
     const places = [{name:"restaurante Bacano"},
                     {name:"restaurante Bueno"},
