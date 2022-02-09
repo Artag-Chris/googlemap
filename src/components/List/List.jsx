@@ -6,13 +6,12 @@ import { Restaurant } from '@material-ui/icons';
 
 
 
-const List = () =>{
+const List = ({places,childClicked}) =>{
     const classes = useStyles();
     const [type, setType] = useState("restaurants");
     const [rating, setRating] = useState("");	
-    const places = [{name:"restaurante Bacano"},
-                    {name:"restaurante Bueno"},
-                    {name:"restaurante Malo"},]
+    
+console.log({childClicked});
     return(
         <div className={classes.container}>
             <Typography variant="h4" className={classes.title}>Restaurantes, Hoteles y Atracciones</Typography>
