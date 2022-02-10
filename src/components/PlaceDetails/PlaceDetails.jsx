@@ -5,9 +5,10 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Rating from '@material-ui/lab/Rating';
 import useStyles from './styles';
 
-const PlaceDetails = ({place}) =>{
+const PlaceDetails = ({place, selected, refProp }) =>{
+    if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     const clases= useStyles();
-    console.log(place)
+    
     return(
         <Card elevation={6}>
             <CardMedia 
